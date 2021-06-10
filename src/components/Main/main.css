@@ -1,0 +1,129 @@
+.outer-div {
+  margin-top: -4rem;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.item-1,
+.item-2 {
+  background-color: seashell;
+  padding: 0 2rem;
+  height: 300px;
+  display: grid;
+  align-items: flex-end;
+}
+
+.item-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.card-special {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.card-special h3{
+  font-size: 2rem;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.card-special p {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.card-button-special {
+  font-size: 1rem;
+  padding: 1rem;
+  border: 2px dashed yellow;
+  background: red;
+  color: yellow;
+}
+
+.card-button-special:hover {
+  background-color: yellow;
+  color: #000;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  width: 429px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.item-footer {
+  margin-top: 2rem;
+}
+
+.item-footer-icon {
+  display: flex;
+  align-items: center;
+}
+
+.item-footer-icon img {
+  margin-right: .5rem;
+}
+
+.item-footer-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.item-footer-date span {
+  color: #d2d27b;
+}
+
+.six-card-item .image {
+  width: 440px;
+  height: 220px;
+  transition: 2s ease;
+}
+
+.six-card-item .image:hover {
+  width: 429px;
+  height: 200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cover {
+  height: 215px;
+  width: 100%;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.svg-icon {
+  width: 25px;
+} 

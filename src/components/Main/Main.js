@@ -1,206 +1,102 @@
 import React from "react";
 import "./main.css";
 
+import BigCard from './BigCard/BigCard'
+import SmallCard from './Grid6/SmallCard'
+import CardSpecial from "./Grid6/CardSpecial";
+
+import sImage1 from '../../assets/images/small-image-1.jpg'
+import sImage2 from '../../assets/images/small-image-2.jpg'
+import sImage4 from '../../assets/images/small-image-4.jpg'
+import sImage5 from '../../assets/images/small-image-5.jpg'
+import sImage6 from '../../assets/images/small-image-6.jpeg'
+
+import video from '../../assets/images/video1.mp4'
+
+
+const playMovie = (e) => {
+  e.currentTarget.play();
+  console.log('on');
+}
+
+const stopMovie = (e) => {
+  e.currentTarget.pause();
+  console.log('off');
+}
+
 const Main = () => {
   return (
-    <div>
-      {/* <div className="main-container">
-      <div className="card">
-            <div className="card-content">
-              <div className="card-content-main">
-                <h4 className="">Alchemy of Zagreb</h4>
-                <p className="">
-                When I walk around Zagreb, I sometimes feel like there’s a special chemistry between Zagreb... and chemistry.
-                </p>
-              </div>
-              <div className="card-content-footer">
-                <div className="card-content-footer-likes">
-                  <img src={svg} alt="" className="svg-icon"/>
-                  <span>230</span>
-                </div>
-                <div className="card-content-footer-date">
-                  <p>12.05.2021.</p>
-                  <span>Untold Stories</span>
-                </div>  
-               
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-content">
-              <div className="card-content-main">
-                <h4 className="">Alchemy of Zagreb</h4>
-                <p className="">
-                When I walk around Zagreb, I sometimes feel like there’s a special chemistry between Zagreb... and chemistry.
-                </p>
-              </div>
-              <div className="card-content-footer">
-                <div className="card-content-footer-likes">
-                  <img src={svg} alt="" className="svg-icon"/>
-                  <span>230</span>
-                </div>
-                <div className="card-content-footer-date">
-                  <p>12.05.2021.</p>
-                  <span>Untold Stories</span>
-                </div>  
-               
-              </div>
-            </div>
-          </div>
-        
+    <div className="main-container">
+      <div className="bigCard-container">
+        <BigCard 
+          title="Where To Take The Best Selfie In Zagreb?"
+          text="If you want that perfect picture that captures your mood and Zagreb's beauty in the best way, don't worry, we got you covered. We prepared a short list of some of the most beautiful Zagreb's locations so you can have that amazing memory captured in your pictures.."
+          span="More than Words"
+        />
+        <BigCard 
+          title="Alchemy of Zagreb"
+          text="When I walk around Zagreb, I sometimes feel like there’s a special chemistry between Zagreb... and chemistry."
+          span="Untold stories"
+        />
       </div>
-      <div className="cards">
+      
+      <div className="grid-6">
+        <SmallCard 
+          src={sImage1}
+          title="Running in Zagreb - where to go?"
+          text="If you are visiting Zagreb and want to stay active but you're not sure what the best locations for running, hiking, or even cycling are, we're here to help you. You can stay active and enjoy Zagreb's beautiful nature at the same time.
+          "
+          span="More than Words"
+        />
+        <SmallCard 
+          src={sImage2}
+          title="Running in Zagreb - where to go?"
+          text="If you are visiting Zagreb and want to stay active but you're not sure what the best locations for running, hiking, or even cycling are, we're here to help you. You can stay active and enjoy Zagreb's beautiful nature at the same time.
+          "
+          span="More than Words"
+        />
+        <CardSpecial 
+          title="Running in Zagreb - where to go?"
+          text="Send us your photo of Zagreb with your personal"
+        />
+        <SmallCard 
+           src={sImage4}
+           title="Running in Zagreb - where to go?"
+          text="If you are visiting Zagreb and want to stay active but you're not sure what the best locations for running, hiking, or even cycling are, we're here to help you. You can stay active and enjoy Zagreb's beautiful nature at the same time.
+          "
+          span="More than Words"
+        />
+        <SmallCard 
+          src={sImage5}
+          title="Running in Zagreb - where to go?"
+          text="If you are visiting Zagreb and want to stay active but you're not sure what the best locations for running, hiking, or even cycling are, we're here to help you. You can stay active and enjoy Zagreb's beautiful nature at the same time.
+          "
+          span="More than Words"
+        />
+        <SmallCard 
+          src={sImage6}
+          title="Running in Zagreb - where to go?"
+          text="If you are visiting Zagreb and want to stay active but you're not sure what the best locations for running, hiking, or even cycling are, we're here to help you. You can stay active and enjoy Zagreb's beautiful nature at the same time.
+          "
+          span="More than Words"
+        />
+      </div>
+     
+      <div className="more-stories-container">
+        <button className="more-stories-button"> More Stories </button>
+      </div>
 
-          <div className="card">
-            <div className="card-cover">
-             <img src={image} alt="" className="card-cover"></img>
-            </div>
-            <div className="card-content">
-              <div className="card-content-main">
-                <h4 className="">The city and its river</h4>
-                <p className="">
-                  The City and Its River Zagreb lies on the banks of the river Sava.
-                  I bet that some of you who don’t live in Croatia, even if you
-                  visited Zagreb once, are asking yourselves as you’re reading this:
-                  “Wait, there’s a river in Zagreb?”
-                </p>
-              </div>
-              <div className="card-content-footer">
-                <div className="card-content-footer-likes">
-                  <img src={svg} alt="" className="svg-icon"/>
-                  <span>230</span>
-                </div>
-                <div className="card-content-footer-date">
-                  <p>12.05.2021.</p>
-                  <span>Untold Stories</span>
-                </div>  
-               
-              </div>
-            </div>
-          </div>
+      <div>
+        <img src={sImage1} alt="video-logo" />
+        <video 
+            onMouseOver={playMovie}
+            onMouseOut={stopMovie}
+            preload='none'
+            loop>
+          <source src={video} type='video/mp4'     />
+        </video>      
+      </div>
 
-          <div className="card">
-            <div className="card-cover">
-             <img src={image} alt="" className="card-cover"></img>
-            </div>
-            <div className="card-content">
-              <div className="card-content-main">
-                <h4 className="">The city and its river</h4>
-                <p className="">
-                  The City and Its River Zagreb lies on the banks of the river Sava.
-                  I bet that some of you who don’t live in Croatia, even if you
-                  visited Zagreb once, are asking yourselves as you’re reading this:
-                  “Wait, there’s a river in Zagreb?”
-                </p>
-              </div>
-              <div className="card-content-footer">
-                <div className="card-content-footer-likes">
-                  <img src={svg} alt="" className="svg-icon"/>
-                  <span>230</span>
-                </div>
-                <div className="card-content-footer-date">
-                  <p>12.05.2021.</p>
-                  <span>Untold Stories</span>
-                </div>  
-               
-              </div>
-            </div>
-          </div>
-
-          <div className="card-special">
-            <h3>Share your photo</h3>
-            <p>Send us your photo of Zagreb with your personal
-              details and we will share it on our Photo Wall.
-            </p>
-            <button className="card-button-special">Send a photo</button>
-          </div>
-
-          <div className="card">
-            <div className="card-cover">
-             <img src={image} alt="" className="card-cover"></img>
-            </div>
-            <div className="card-content">
-              <div className="card-content-main">
-                <h4 className="">The city and its river</h4>
-                <p className="">
-                  The City and Its River Zagreb lies on the banks of the river Sava.
-                  I bet that some of you who don’t live in Croatia, even if you
-                  visited Zagreb once, are asking yourselves as you’re reading this:
-                  “Wait, there’s a river in Zagreb?”
-                </p>
-              </div>
-              <div className="card-content-footer">
-                <div className="card-content-footer-likes">
-                  <img src={svg} alt="" className="svg-icon"/>
-                  <span>230</span>
-                </div>
-                <div className="card-content-footer-date">
-                  <p>12.05.2021.</p>
-                  <span>Untold Stories</span>
-                </div>  
-               
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-cover">
-             <img src={image} alt="" className="card-cover"></img>
-            </div>
-            <div className="card-content">
-              <div className="card-content-main">
-                <h4 className="">The city and its river</h4>
-                <p className="">
-                  The City and Its River Zagreb lies on the banks of the river Sava.
-                  I bet that some of you who don’t live in Croatia, even if you
-                  visited Zagreb once, are asking yourselves as you’re reading this:
-                  “Wait, there’s a river in Zagreb?”
-                </p>
-              </div>
-              <div className="card-content-footer">
-                <div className="card-content-footer-likes">
-                  <img src={svg} alt="" className="svg-icon"/>
-                  <span>230</span>
-                </div>
-                <div className="card-content-footer-date">
-                  <p>12.05.2021.</p>
-                  <span>Untold Stories</span>
-                </div>  
-               
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-cover">
-             <img src={image} alt="" className="card-cover"></img>
-            </div>
-            <div className="card-content">
-              <div className="card-content-main">
-                <h4 className="">The city and its river</h4>
-                <p className="">
-                  The City and Its River Zagreb lies on the banks of the river Sava.
-                  I bet that some of you who don’t live in Croatia, even if you
-                  visited Zagreb once, are asking yourselves as you’re reading this:
-                  “Wait, there’s a river in Zagreb?”
-                </p>
-              </div>
-              <div className="card-content-footer">
-                <div className="card-content-footer-likes">
-                  <img src={svg} alt="" className="svg-icon"/>
-                  <span>230</span>
-                </div>
-                <div className="card-content-footer-date">
-                  <p>12.05.2021.</p>
-                  <span>Untold Stories</span>
-                </div>  
-               
-              </div>
-            </div>
-          </div>
- */}
-
-      {/* </div> */}
     </div>
   );
 };

@@ -8,6 +8,7 @@ a {
     padding: 15px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.75);
+    top: 60px;
 }
 
 .nav-container {

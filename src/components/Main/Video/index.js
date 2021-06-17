@@ -10,10 +10,10 @@ const playMovie = (e) => {
     console.log('on');
   }
   
-  const stopMovie = (e) => {
+const stopMovie = (e) => {
     e.currentTarget.pause();
     console.log('off');
-  }
+}
 
 
 function index() {

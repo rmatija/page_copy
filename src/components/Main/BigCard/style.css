@@ -62,8 +62,6 @@ a {
     transition: all .6s;
 }
 
-
-
 .card-content-footer-date {
     text-align: right;
 }
@@ -77,4 +75,10 @@ a {
     .card-content {
       min-height: 300px;
     }
-  }
+}
+
+@media (max-width: 1440px) {
+    .bigCard-container {
+      flex-direction: column;
+    }
+}

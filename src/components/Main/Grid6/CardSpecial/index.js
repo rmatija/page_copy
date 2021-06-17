@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './CardSpecial.css'
+import './style.css'
 
 function CardSpecial(props) {
     return (

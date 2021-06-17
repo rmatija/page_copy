@@ -8,6 +8,8 @@
     flex: 1 1 400px;
     height: 450px;
     border-radius: 5px;
+    margin: .5rem;
+    border-radius: 10px;
   }
   
   .card-special h3{

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './SmallCard.css'
+import './style.css'
 
 function SmallCard(props) {
     return (

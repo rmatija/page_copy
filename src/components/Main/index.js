@@ -1,9 +1,10 @@
 import React from "react";
-import "./main.css";
+import "./style.css";
 
-import BigCard from './BigCard/BigCard'
-import SmallCard from './Grid6/SmallCard'
+import BigCard from './BigCard';
+import SmallCard from './Grid6/SmallCard';
 import CardSpecial from "./Grid6/CardSpecial";
+import Video from './Video';
 
 import sImage1 from '../../assets/images/small-image-1.jpg'
 import sImage2 from '../../assets/images/small-image-2.jpg'
@@ -11,18 +12,6 @@ import sImage4 from '../../assets/images/small-image-4.jpg'
 import sImage5 from '../../assets/images/small-image-5.jpg'
 import sImage6 from '../../assets/images/small-image-6.jpeg'
 
-import video from '../../assets/images/video1.mp4'
-
-
-const playMovie = (e) => {
-  e.currentTarget.play();
-  console.log('on');
-}
-
-const stopMovie = (e) => {
-  e.currentTarget.pause();
-  console.log('off');
-}
 
 const Main = () => {
   return (
@@ -86,15 +75,20 @@ const Main = () => {
         <button className="more-stories-button"> More Stories </button>
       </div>
 
-      <div>
-        <img src={sImage1} alt="video-logo" />
-        <video 
-            onMouseOver={playMovie}
-            onMouseOut={stopMovie}
-            preload='none'
-            loop>
-          <source src={video} type='video/mp4'     />
-        </video>      
+      <div className="video-title">
+                <h2>Latest ZagrebLoops</h2>
+                <p>Move your cursor over the video to play it</p>
+      </div>
+      
+      <div className="video-grid">
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+      </div>
+
+      <div className="more-loops-container">
+        <button className="more-loops-button"> More loops </button>
       </div>
 
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-import "./mainNav.css";
+import "./style.css";
 
 import logo from '../../../assets/images/lovezagreb.jpg'
 

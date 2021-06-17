@@ -1,5 +1,5 @@
 import React from 'react'
-import './covidNav.css'
+import './style.css'
 
 import staySafe from '../../../assets/images/stay_safe.png'
 import corona from '../../../assets/images/corona-vector.svg'

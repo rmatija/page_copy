@@ -1,25 +1,25 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 import BigCard from './BigCard';
 import SmallCard from './Grid6/SmallCard';
 import CardSpecial from "./Grid6/CardSpecial";
 import Video from './Video';
+import Carousel from "./Carousel";
 
 import sImage1 from '../../assets/images/small-image-1.jpg'
 import sImage2 from '../../assets/images/small-image-2.jpg'
 import sImage3 from '../../assets/images/small-image-3.jpeg'
 import sImage4 from '../../assets/images/small-image-4.jpg'
 import sImage5 from '../../assets/images/small-image-5.jpg'
-
 import sImage6 from '../../assets/images/river-zg.jpg'
 import sImage7 from '../../assets/images/cevapi-zg.jpg'
 import sImage8 from '../../assets/images/medvednica-utrka.jpg'
 import sImage10 from '../../assets/images/kucice-zg.jpeg'
 import sImage11 from '../../assets/images/alchemy-zg.jpg'
-
-
-
 
 
 const Main = () => {
@@ -138,6 +138,16 @@ const Main = () => {
       <div className="explore-title">
         <h2>Explore topics</h2>
       </div>
+
+      <div className="carousel">
+        < Carousel />        
+      </div>
+
+      <div className="latest-images">
+        <h2>Latest images</h2>
+      </div>
+
+      
     </div>
   );
 };

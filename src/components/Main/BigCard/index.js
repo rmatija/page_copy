@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './style.css'
+import './style.scss'
 
 function BigCard(props) {
     return (
@@ -8,7 +8,7 @@ function BigCard(props) {
             <a href="https://www.lovezagreb.hr/" target="_blank" rel="noreferrer">
                 <div className="card-content">
                     <div className="card-content-main">
-                        <h4> {props.title} </h4>
+                        <h3> {props.title} </h3>
                         <p> {props.text} </p>
                     </div>
                     <div className="card-content-footer">

@@ -1,0 +1,101 @@
+.card-small {
+    display: flex;
+    margin: .5rem;
+    border-radius: 10px;
+    flex: 1 1 400px;
+    background-color: #fff;
+
+    &:hover {
+        a .card-small-content .card-small-content-footer .card-small-content-footer-likes .svg-icon {
+            background-image: url(../../../../assets/images/heart-red.svg);
+            transform: scale(1.15,1.15);
+        }
+
+        .card-small-image-wrapper .card-small-image {
+            transform: scale(1);
+        }
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        min-height: 515px;
+        text-decoration: none;
+
+        .card-small-image-wrapper {
+            flex: 1;
+            overflow: hidden;
+            border-top-left-radius: 5px; 
+            border-top-right-radius: 5px; 
+            min-height: 210px;
+
+            .card-small-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transform: scale(1.1);
+                transition: all .9s;
+            }
+        }
+
+        .card-small-content {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            flex: 1;
+            padding: 1rem;
+
+            .card-small-content-main {
+                h5 {
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    font-size: .8rem;
+                    line-height: 1.5;
+                    color: #666;
+                }
+            }
+
+            .card-small-content-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex: 1;
+
+                .card-small-content-footer-likes {
+                    display: flex;
+
+                    .svg-icon {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: .5rem;
+                        background-image: url(../../../../assets/images/heart-solid.svg);
+                        background-repeat: no-repeat;
+                        transition: all .6s;
+                    }
+                }
+
+                .card-small-content-footer-date {
+                    text-align: right;
+
+                    span {
+                        color: #fec830;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+    .card-small {
+      flex: 1 1 300px;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './style.css'
+import './style.scss'
 
 function SmallCard(props) {
     return (
@@ -11,7 +11,7 @@ function SmallCard(props) {
                 </div>
                 <div className="card-small-content">
                     <div className="card-small-content-main">
-                        <h4> {props.title} </h4>
+                        <h5> {props.title} </h5>
                         <p> {props.text} </p>
                     </div>
                     <div className="card-small-content-footer">

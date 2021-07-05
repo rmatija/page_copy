@@ -6,7 +6,7 @@
     align-items: center;
     padding: 0 3rem;
     flex: 1 1 400px;
-    height: 450px;
+    min-height: 515px;
     border-radius: 5px;
     margin: .5rem;
     border-radius: 10px;
@@ -37,3 +37,9 @@
     color: #000;
     cursor: pointer;
   }
+
+  @media (max-width: 1440px) {
+    .card-special {
+      flex: 1 1 300px;
+    }
+}

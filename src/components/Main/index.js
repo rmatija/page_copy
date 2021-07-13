@@ -9,6 +9,7 @@ import SmallCard from './Grid6/SmallCard';
 import CardSpecial from "./Grid6/CardSpecial";
 import Video from './Video';
 import Carousel from "./Carousel";
+import LatestImages from "./LatestImages";
 
 import sImage1 from '../../assets/images/small-image-1.jpg'
 import sImage2 from '../../assets/images/small-image-2.jpg'
@@ -147,6 +148,9 @@ const Main = () => {
         <h2>Latest images</h2>
       </div>
 
+      <div className="latest-images-container">
+        < LatestImages />
+      </div>
       
     </div>
   );

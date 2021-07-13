@@ -2,18 +2,23 @@
     margin: 0 auto;
     padding: 0 2rem;
 
+    &:hover {
+        .slick-slide  {
+            
+        }
+    }
+
     .slick-prev, 
     .slick-next {
         background-color: #f2f2f2;
     }
 
-    .slick-prev:before, 
-    .slick-next:before {
+    .slick-prev::before, 
+    .slick-next::before {
         color: #000;
     }
 
     .slick-slide {
-        
         img {
             height: 100%;
             width: 100%;
@@ -26,6 +31,15 @@
             position: relative;
             background-color: #000;
             height: 300px;
+            
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    opacity: .6;
+                    transition: all .6s ease-out;
+                }
+            }
         }
     
         .text-overlay {

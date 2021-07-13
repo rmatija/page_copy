@@ -2,7 +2,7 @@ import React from 'react'
 
 import './style.scss'
 
-import video from '../../../assets/images/video1.mp4'
+import video from '../../../assets/videos/video1.mp4'
 
 
 const playMovie = (e) => {
